@@ -33,3 +33,9 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+.eslintcache
+.husky
+.eslintrc.*
+.prettierignore
+.prettierrc.js
