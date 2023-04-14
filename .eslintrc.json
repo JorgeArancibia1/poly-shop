@@ -21,7 +21,7 @@
   },
   "ignorePatterns": ["temp.js", "**/vendor/*.js", "next-env.d.ts"],
   "rules": {
-    // "key-spacing": ["error", { "beforeColon": false,"afterColon": false, "mode": "strict" }],
+    "key-spacing": ["error", { "beforeColon": false,"afterColon": false, "mode": "strict" }],
     "indent": ["error", "tab"],
     "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
     "linebreak-style": ["error", "unix"],
