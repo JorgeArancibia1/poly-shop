@@ -19,8 +19,11 @@
       "version": "detect"
     }
   },
+  "ignorePatterns": ["temp.js", "**/vendor/*.js", "next-env.d.ts"],
   "rules": {
+    // "key-spacing": ["error", { "beforeColon": false,"afterColon": false, "mode": "strict" }],
     "indent": ["error", "tab"],
+    "no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
     "linebreak-style": ["error", "unix"],
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
@@ -31,9 +34,34 @@
     "@typescript-eslint/no-explicit-any": "off",
     "no-console": "warn",
     "no-use-before-define": "warn",
-    "spaced-comment": "warn",
     "consistent-return": 2,
     "no-else-return"   : 1,
-    "space-unary-ops"  : 2
+    "space-unary-ops"  : 2,
+    "eol-last": ["error", "never"],
+    "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
+    "no-trailing-spaces": "error",
+    "object-curly-spacing": ["error", "always", {
+      "objectsInObjects": false,
+      "arraysInObjects": false
+    }],
+    "space-in-parens": ["error", "always"],
+    "space-infix-ops": ["error", { "int32Hint": false }],
+    "computed-property-spacing": ["error", "never", { "enforceForClassMembers": true }],
+    "array-bracket-spacing": ["error", "always", {
+      "singleValue": true,
+      "objectsInArrays": true,
+      "arraysInArrays": true
+    }],
+    "spaced-comment": ["error", "always", {
+      "line": {
+          "markers": ["/"],
+          "exceptions": ["-", "+"]
+      },
+      "block": {
+          "markers": ["!"],
+          "exceptions": ["*"],
+          "balanced": true
+      }
+    }]
   }
 }

@@ -9,10 +9,10 @@ const Home: NextPage = () => {
 			pageDescription={'Encuentra los mejores productos de ropa americana.'}
 		>
 			<Typography variant='h1' component='h1'>
-Tienda
+				Tienda
 			</Typography>
 			<Typography variant='h2' sx={{ mb: 1 }}>
-Todos los productos
+				Todos los productos
 			</Typography>
 		</ShopLayout>
 	);
