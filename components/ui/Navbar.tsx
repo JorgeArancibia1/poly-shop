@@ -26,13 +26,13 @@ export const Navbar: React.FunctionComponent<INavbarProps> = () => {
 						{' '}
 						Poly |{' '}
 					</Typography>
-					<Typography color='primary' sx={{ ml: 0.5 }}>
+					<Typography color='primary' sx={{ ml:0.5 }}>
 						{' '}
 						Shop{' '}
 					</Typography>
 					<Box flex={1} />
 
-					<Box sx={{ display: { xs: 'none', sm: 'block' }}}>
+					<Box sx={{ display:{ xs:'none', sm:'block' }}}>
 						<NextLink href='/category/men' passHref>
 							<Link>
 								<Button> Hombres </Button>
