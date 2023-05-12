@@ -1,9 +1,23 @@
-import React from 'react';
+import { Card, CardActionArea, CardMedia, Grid } from '@mui/material';
+import React, { FC } from 'react';
+import { Iproduct } from '../../interfaces';
 
-type Props = {}
+type Props = {
+  product: Iproduct;
+}
 
-const ProductCard = ( props: Props ) => {
+export const ProductCard: FC<Props> = ( { product } ) => {
 	return (
-		<div>ProductCard</div>
+		<Grid item xs={6} sm={4} key={product.slug}>
+			<Card>
+				<CardActionArea>
+					<CardMedia
+						component='img'
+						image={`products/${product.images[0]}`}
+						alt={product.title}
+					/>
+				</CardActionArea>
+			</Card>
+		</Grid>
 	);
 };
