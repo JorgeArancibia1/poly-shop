@@ -3,7 +3,7 @@ import type { NextPage } from 'next';
 import { ShopLayout } from '../components/layouts/ShopLayout';
 import { initialData } from '../database/products';
 import { ProductList } from './products';
-import { Iproduct } from '../interfaces';
+// import { Iproduct } from '../interfaces';
 
 const Home: NextPage = () => {
 	return (
