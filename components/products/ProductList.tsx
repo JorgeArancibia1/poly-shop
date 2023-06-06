@@ -1,13 +1,13 @@
 import { Grid } from '@mui/material';
 import React, { FC } from 'react';
 import { Iproduct } from '../../interfaces';
-import { ProductCard } from './ProductCard';
+import ProductCard from './ProductCard';
 
 type Props = {
   products: Iproduct[]
 }
 
-export const ProductList: FC<Props> = ( { products } ) => {
+const ProductList: FC<Props> = ( { products } ) => {
 	return (
 		<Grid container spacing={4}>
 			{
@@ -22,3 +22,5 @@ export const ProductList: FC<Props> = ( { products } ) => {
 		</Grid>
 	);
 };
+
+export default ProductList;

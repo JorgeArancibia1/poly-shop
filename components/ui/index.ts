@@ -1,2 +1,2 @@
-export * from './Navbar';
-export * from './SideMenu';
+export { Navbar } from './Navbar';
+export { SideMenu } from './SideMenu';
